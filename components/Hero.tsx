@@ -45,7 +45,7 @@ function Hero() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="text-xl md:text-2xl mb-8 text-blue-100"
                     >
-                        02/20/2025
+                Claim your airdrop now to celebrate the launch and get exclusive rewards!
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
