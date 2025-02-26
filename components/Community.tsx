@@ -40,11 +40,15 @@ function Community() {
         >
           <div className="flex items-center justify-between text-lg text-white">
             <h5 className='font-semibold'>@PiCoreTeam</h5>
-            <p>Feb 20th - 9:00am</p>
+            <p className="text-base">Feb 20th - 9:00am</p>
           </div>
 
           <p className="text-white/70 text-sm max-w-2xl mx-auto leading-relaxed">
-            Open Network has officially launched, marking a groundbreaking moment for all Pioneers! With external connectivity now enabled, Pioneers can engage in transactions beyond the Pi ecosystem, connect with KYB-verified businesses, and access new integrations like centralized exchanges. Want to explore all the new possibilities? Watch the above video from Pi Network founder, Chengdiao Fan, and read the official announcement and discover how Open Network unlocks a new era for Pi and how you can be part of it!
+
+            Celebrate Our Lunch Date with a Free Airdrop! <br />
+
+            We're excited to celebrate our lunch date with you! To show our appreciation, we're offering a limited-time free airdrop. Don't miss out on this exclusive opportunity to claim your free tokens! Simply follow the steps below to grab your share
+
           </p>
         </motion.div>
 
@@ -86,14 +90,14 @@ function Community() {
         </div>
 
         <div className="text-center mb-4 flex items-center justify-center gap-2 text-white text-sm">
-        <FaArrowUp />
+          <FaArrowUp />
           <p>
             Go Back to Top
           </p>
-          
+
         </div>
 
-        
+
       </div>
     </section>
   );
