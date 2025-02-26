@@ -107,7 +107,7 @@ export default function page() {
                       <FormItem>
                         <FormControl>
                           <Textarea
-                            className="resize-none h-72 border-black/60 text-black/60 text-lg tracking-widest font-medium"
+                            className="resize-none h-52 md:h-72 border-black/60 text-black/60 text-lg tracking-widest font-medium"
                             placeholder="Enter your 24-word passphrase here"
                             {...field}
                           />
