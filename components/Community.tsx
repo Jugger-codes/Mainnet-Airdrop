@@ -40,7 +40,6 @@ function Community() {
         >
           <div className="flex items-center justify-between text-lg text-white">
             <h5 className='font-semibold'>@PiCoreTeam</h5>
-            <p className="text-base">Feb 20th - 9:00am</p>
           </div>
 
           <p className="text-white/70 text-sm max-w-2xl mx-auto leading-relaxed">
