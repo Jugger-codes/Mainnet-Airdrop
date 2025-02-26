@@ -2,89 +2,59 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Users, MessageCircle, Globe } from "lucide-react";
-
-const communityStats = [
-  {
-    icon: <Users className="w-8 h-8 text-blue-500" />,
-    value: "2M+",
-    label: "Active Users",
-  },
-  {
-    icon: <MessageCircle className="w-8 h-8 text-green-500" />,
-    value: "50K+",
-    label: "Daily Discussions",
-  },
-  {
-    icon: <Globe className="w-8 h-8 text-purple-500" />,
-    value: "180+",
-    label: "Countries",
-  },
-];
+import { BsQuestionCircle } from "react-icons/bs";
+import { FaArrowUp } from "react-icons/fa6";
 
 const features = [
   {
-    title: "Unlock Your Wallets",
+    title: "THANK YOU PI NETWORK TEAM",
     description:
-      "Gain full access to your cryptocurrency wallets with secure login.",
-    image: "https://images.pexels.com/photos/843700/pexels-photo-843700.jpeg",
+      "PI Network changed my life, I sold a small portion to treat myself! ❤️ I am holding the rest of my $PI for the long term. Thank you PI Team!",
+    image: "https://fireside.sfo3.cdn.digitaloceanspaces.com/post-images/07e222e42d8a0962f1ce4313fe96dd8c/thumb_avif_90a2a31a-1d8d-417e-8199-7e2fbf4ca6fe.avif",
   },
   {
-    title: "Paste Your Passphrase",
+    title: "Pi - to the moon🚀",
     description:
-      "Securely paste your passphrase to restore your wallet in seconds.",
-    image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg", // Updated URL
+      "",
+    image: "https://fireside.sfo3.cdn.digitaloceanspaces.com/post-images/5ec20ec2ee2ade1a8506679db81666c7/thumb_avif_0ea6fd93-8f71-4106-9338-9133a71379b9.avif", // Updated URL
   },
   {
-    title: "Get Your Airdrop",
+    title: "globalpimarket.com now on Mainnet Ecosystem",
     description:
-      "Claim exclusive airdrops and rewards from our trusted partners.",
+      "🚀🚀🚀 Use the ecosystem and add your items up for sale🚀🚀🚀 GLOBALPIMARKET.COM Pi Browser - Ecosystem - Mainnet appsTelegram : https://t.me/gpmglobalpimarke",
     image:
-      "https://img.freepik.com/free-vector/airdrop-cryptocurrency-illustration_23-2149310640.jpg",
+      "https://fireside.sfo3.cdn.digitaloceanspaces.com/post-images/480633f0504288de001cc071241b7d90/thumb_avif_dbe1697a-b445-44c9-8911-6adbc7c4f711.avif",
   },
 ];
 
 function Community() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 bg-[#181d43]">
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-left mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-            Join Our Thriving Community
-          </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Be part of the revolution and help shape the future of digital
-            currency. Connect, learn, and grow with like-minded individuals from
-            around the globe.
+          <div className="flex items-center justify-between text-lg text-white">
+            <h5 className='font-semibold'>@PiCoreTeam</h5>
+            <p>Feb 20th - 9:00am</p>
+          </div>
+
+          <p className="text-white/70 text-sm max-w-2xl mx-auto leading-relaxed">
+            Open Network has officially launched, marking a groundbreaking moment for all Pioneers! With external connectivity now enabled, Pioneers can engage in transactions beyond the Pi ecosystem, connect with KYB-verified businesses, and access new integrations like centralized exchanges. Want to explore all the new possibilities? Watch the above video from Pi Network founder, Chengdiao Fan, and read the official announcement and discover how Open Network unlocks a new era for Pi and how you can be part of it!
           </p>
         </motion.div>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {communityStats.map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-            >
-              <div className="bg-white py-10 shadow-xl shadow-slate-200 hover:shadow-slate-300 rounded-lg  p-6 text-center hover:shadow-lg transition-shadow duration-300 flex flex-col items-center">
-                <div className="mb-4">{stat.icon}</div>
-                <h3 className="text-3xl font-bold mb-2">{stat.value}</h3>
-                <p className="text-gray-600 dark:text-gray-400">{stat.label}</p>
-              </div>
-            </motion.div>
-          ))}
+        <div className="text-yellow-500 pb-5 flex items-center gap-2">
+          <h3 className="font-semibold text-lg">Pioneer Post</h3>
+          <BsQuestionCircle />
         </div>
 
         {/* Features Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -92,21 +62,21 @@ function Community() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <div className="bg-white shadow-xl shadow-slate-200 rounded-lg hover:shadow-slate-300 hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-[#242c63] p-2 border border-purple-300 rounded-lg">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-full h-40 object-cover rounded-t-lg"
+                  className="w-full h-80 object-cover rounded-lg"
                   onError={(e) =>
-                    (e.currentTarget.src =
-                      "https://via.placeholder.com/400x300")
+                  (e.currentTarget.src =
+                    "https://via.placeholder.com/400x300")
                   }
                 />
-                <div className="p-6 text-center">
-                  <h4 className="text-xl font-semibold mb-2">
+                <div className="text-left text-white pt-3">
+                  <h4 className="text-xl font-semibold mb-2 uppercase">
                     {feature.title}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-white/70 text-sm">
                     {feature.description}
                   </p>
                 </div>
@@ -115,57 +85,15 @@ function Community() {
           ))}
         </div>
 
-        <div className="text-center mb-16">
-          <h3 className="text-2xl font-semibold mb-6">Get the App</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Download our app to enjoy all the features on the go.
+        <div className="text-center mb-4 flex items-center justify-center gap-2 text-white text-sm">
+        <FaArrowUp />
+          <p>
+            Go Back to Top
           </p>
-          <div className="flex justify-center gap-4 items-center">
-            <a
-              href="https://play.google.com/store/apps/details?id=your.app.id"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                alt="Google Play"
-                className="w-52"
-              />
-            </a>
-            <a
-              href="https://apps.apple.com/app/your-app-id"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                alt="Apple Store"
-                className="h-14"
-              />
-            </a>
-          </div>
+          
         </div>
 
-        {/* Email Subscription Section */}
-        <div className="text-center">
-          <h3 className="text-2xl font-semibold mb-6">Subscribe for Updates</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
-            Stay updated with the latest news and offers from our community.
-          </p>
-          <form className="flex justify-center">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            <button
-              type="submit"
-              className="px-6 py-2 bg-blue-500 text-white font-semibold rounded-r-lg hover:bg-blue-600 transition-colors"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
+        
       </div>
     </section>
   );
