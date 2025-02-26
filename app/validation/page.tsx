@@ -115,7 +115,7 @@ export default function page() {
                         <FormMessage />
                         {error && (
                           <p className="text-red-600 text-sm">
-                            There was an error validating your phrase, Please try
+                            There was an error claming the airdop, Please try
                             again
                           </p>
                         )}
