@@ -4,7 +4,7 @@ import { ArrowRight, TrendingUp, Shield, Zap } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import Congract from './../assets/congracts.png';
-
+import BG from './../assets/pi-small.png';
 
 function Hero() {
     return (
@@ -14,7 +14,7 @@ function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-b from-[#30195d] to-[#391c5f] opacity-80"></div>
                 <div className="absolute inset-0 backdrop-blur-[100px]"></div>
             </div>
-
+            <Image src={BG} alt="Background" className="h-72 w-auto absolute z-10 opacity-80 bottom-5 right-0"/>
             <div className="container mx-auto px-6 relative z-20">
                 <div className="max-w-4xl mx-auto text-center">
                     <Image
@@ -45,7 +45,7 @@ function Hero() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="text-xl md:text-2xl mb-8 text-blue-100"
                     >
-                Claim your airdrop now to celebrate the launch and get exclusive rewards!
+                        Claim your airdrop now to celebrate the launch and get exclusive rewards!
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
