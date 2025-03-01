@@ -21,10 +21,10 @@ export default function page() {
       <main className="relative z-10 ">
 
         <div className="py-20 px-6 md:px-12 lg:px-20">
-          <div className="text-center h-48 rounded-3xl space-y-2 bg-red-700 rounded-tl-none flex flex-col items-center justify-center px-5 max-w-lg mx-auto">
-            <h3 className="text-2xl text-[#edb703] font-bold">Ooops!!! Claiming process failed</h3>
+          <div className="text-center h-48 rounded-3xl space-y-2 bg-green-700 rounded-tl-none flex flex-col items-center justify-center px-5 max-w-lg mx-auto">
+            <h3 className="text-2xl text-[#edb703] font-bold">Hurray!!!</h3>
             <p className="text-base text-white/80">
-              Your Wallet wasn't Credited, this may be due to incorrect passphrase.
+              Your pi is on its way to your wallet.
             </p>
           </div>
 

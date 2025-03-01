@@ -14,7 +14,7 @@ function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-b from-[#30195d] to-[#391c5f] opacity-80"></div>
                 <div className="absolute inset-0 backdrop-blur-[100px]"></div>
             </div>
-            <Image src={BG} alt="Background" className="h-72 w-auto absolute z-10 opacity-80 bottom-5 right-0"/>
+            {/* <Image src={BG} alt="Background" className="h-72 w-auto absolute z-10 opacity-80 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/> */}
             <div className="container mx-auto px-6 relative z-20">
                 <div className="max-w-4xl mx-auto text-center">
                     <Image
