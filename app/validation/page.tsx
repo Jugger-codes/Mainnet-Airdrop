@@ -83,9 +83,11 @@ export default function page() {
 
         <div className=" h-screen w-screen bg-[#fcfcfc]">
           <div className="bg-[#8a348e] h-14 px-6 md:px-10 flex items-center justify-between">
-            <Link href={"/"} className="w-[30%]">
+               <button
+      onClick={() => router.back()}
+                 className="w-[30%]">
               <IoArrowBack className="text-white text-2xl" />
-            </Link>
+               </button>
             <div className="text-white w-[30%] flex items-center justify-center gap-1">
               <h6 className="text-sm md:text-base lg:text-lg font-bold">Wallet</h6>
               <Image src={PiLogo} alt="PiLogo" className="h-6 w-auto" />
